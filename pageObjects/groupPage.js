@@ -14,7 +14,6 @@ module.exports = {
             selector: ('//div[@class="option agree max"]')[2],
             locateStrategy: 'xpath'
         },
-
         agreeMax4: {
             selector: ('//div[@class="option agree max"]')[3],
             locateStrategy: 'xpath'
@@ -169,6 +168,50 @@ module.exports = {
         },
         disagreeMax6: {
             selector: ('//div[@class="option disagree max"]')[5],
+            locateStrategy: 'xpath'
+        },
+        articlesAndInsights: {
+            selector: '//a[text()="Articles & Insights"]',
+            locateStrategy: 'xpath'
+        },
+        personalGrowth: {
+            selector: '(//a[@class="category"])[1]',
+            locateStrategy: 'xpath'
+        },
+        professionalDevelopment: {
+            selector: '(//a[@class="category"])[2]',
+            locateStrategy: 'xpath'
+        }, 
+        personalGrowth: {
+            selector: '(//a[@class="category"])[2]',
+            locateStrategy: 'xpath'
+        }, 
+        coreTheory: {
+            selector: '(//a[@class="category"])[3]',
+            locateStrategy: 'xpath'
+        }, 
+        everydayLife: {
+            selector: '(//a[@class="category"])[4]',
+            locateStrategy: 'xpath'
+        }, 
+        researchAndInsights: {
+            selector: '(//a[@class="category"])[5]',
+            locateStrategy: 'xpath'
+        }, 
+        deepDives: {
+            selector: '(//a[@class="category"])[6]',
+            locateStrategy: 'xpath'
+        }, 
+        personalitiesInLifeAndFiction: {
+            selector: '(//a[@class="category"])[7]',
+            locateStrategy: 'xpath'
+        },
+        aLittleFun: {
+            selector: '(//a[@class="category"])[8]',
+            locateStrategy: 'xpath'
+        },
+        viewAllArticles: {
+            selector: '(//a[@class="with-border"])[3]',
             locateStrategy: 'xpath'
         },
         nextButton: 'button[type="button"]',
