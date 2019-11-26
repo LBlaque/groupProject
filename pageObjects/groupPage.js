@@ -1,9 +1,110 @@
+var personalityCommands = {
+    allAgreeMax: function() {
+        // this.api.useXpath()
+        // advocate.execute(function() {return window.sessionStorage.clear();})
+        this
+        .click('@takeTheTest')
+        .click('@agreeMax')
+        .click('@agreeMax2')
+        .click('@agreeMax3')
+        .click('@agreeMax4')
+        .click('@agreeMax5')
+        .click('@agreeMax6')
+        .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You often")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You have a careful")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "When in a group")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You usually")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You usually prefer")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "When in a public place,")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You often drift away into")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You have got detailed education")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "You have got detailed education")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[contains(text(), "Your emotions control")]')
+        // advocate.click('@agreeMax')
+        // .click('@agreeMax2')
+        // .click('@agreeMax3')
+        // .click('@agreeMax4')
+        // .click('@agreeMax5')
+        // .click('@agreeMax6')
+        // .click('@nextButton')
+        // .expect.elementVisible('//div[text()="Advocate"]')
+        // advocate.expect.elementVisible('//div[text()="INFJ-t"]')
+        // .click('@startReading')
+        // .waitForElementVisible('//button[@class="btn btn-white"]')
+        // .click('//button[@class="btn btn-white"]')
+        return this
+    },
+}
 module.exports = {
     url: 'https://www.16personalities.com/',
-    commands: [],
+    commands: [personalityCommands],
     elements: {
         agreeMax: {
-            selector: ('//div[@class="option agree max"]')[0],
+            selector: ('//div[@class="option agree max"][0]'),
             locateStrategy: 'xpath'
         },
         agreeMax2: {
@@ -214,9 +315,13 @@ module.exports = {
             selector: '(//a[@class="with-border"])[3]',
             locateStrategy: 'xpath'
         },
+        takeTheTest: {
+            selector: '//button[@class="btn btn-action"]',
+            locateStrategy: 'xpath'
+        },
         nextButton: 'button[type="button"]',
-        takeTheTest: 'a[class="btn btn-action"]',
         testResult: 'div[class="type-name"]',
+        startReading: 'button[class="btn start btn-action"]',
         personalitiesButton: 'img[alt="16Personalities"]',
         youMayKnow: 'span[class="fal fa-angle-right"]',
         nextArrow: 'div[class="fal fa-long-arrow-right"]',
