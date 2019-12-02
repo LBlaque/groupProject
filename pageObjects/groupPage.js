@@ -414,7 +414,7 @@ module.exports = {
         resultPageTitle: 'article.main.description',
         //below are personality types
         personalityTypes: {
-           selector: '//*[@id="main-app"]/div/nav/ul/li[3]/a',
+            selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
            locateStrategy: 'xpath'
         },
         architect: 'svg[class="architect"]',
