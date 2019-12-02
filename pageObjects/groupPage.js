@@ -17,24 +17,6 @@ var personalityCommands = {
             .pause(300)
         return this
     },
-    next: function () {
-        this
-            .click('@nextArrow')
-            .pause(300)
-            .click('@nextArrow')
-            .pause(300)
-            .click('@nextArrow')
-            .pause(300)
-            .click('@nextArrow')
-            .pause(300)
-            .click('@nextArrow')
-            .pause(300)
-            .click('@nextArrow')
-            .pause(300)
-            .click('@nextArrow')
-            .pause(300)
-        return this
-    },
     allDisagreeMax: function () {
         this
             .click('@disagreeMax1')
@@ -431,11 +413,10 @@ module.exports = {
         nextArrow: 'div[class="fal fa-long-arrow-right"]',
         resultPageTitle: 'article.main.description',
         //below are personality types
-        // personalityTypes: 'a.xh-highlight',
-        //  {
-        //    selector: '//nav[@class="middle-section"]/ul/li[1]/a',
-        //    locateStrategy: 'xpath'
-        //  },
+        personalityTypes: {
+           selector: '//*[@id="main-app"]/div/nav/ul/li[3]/a',
+           locateStrategy: 'xpath'
+        },
         architect: 'svg[class="architect"]',
         logician: 'svg[class="logician"]',
         commander: 'svg[class="commander"]',

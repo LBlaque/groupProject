@@ -46,8 +46,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'Disagree Max Test': browser => {
@@ -88,8 +86,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'Neutral Test': browser => {
@@ -130,8 +126,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'Agree Medium Test': browser => {
@@ -172,8 +166,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'Agree Medium Test': browser => {
@@ -214,8 +206,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'Disagree Med Test': browser => {
@@ -256,8 +246,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'agreeMax(3), disagreeMax(3) Test': browser => {
@@ -298,8 +286,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'disagreeMax(3), agreeMax(3) Test': browser => {
@@ -340,8 +326,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
     'Agree Max to Disagree Max Test': browser => {
@@ -382,8 +366,6 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
-            // .pause(300)
-            // .next()
             .pause(3000)
     },
 }
