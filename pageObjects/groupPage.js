@@ -143,6 +143,62 @@ var personalityCommands = {
             .pause(300)
         return this
     },
+    agree321disagree321: function () {
+        this
+        .click('@disagreeMax1')
+        .pause(300)
+        .click('@disagreeMed2')
+        .pause(300)
+        .click('@disagreeMin3')
+        .pause(300)
+        .click('@agreeMin4')
+        .pause(300)
+        .click('@agreeMed5')
+        .pause(300)
+        .click('@agreeMax6')
+        .pause(300)
+        .click('@nextButton')
+        .pause(300)
+        return this
+    },
+    artAndIns: function () {
+        this
+        .click('@articlesAndInsights')
+        .waitForElementPresent('section')
+        .click('@personalGrowth')
+        .verify.containsText('div[class="selection"]', "Personal Growth")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@professionalDevelopment')
+        .verify.containsText('div[class="selection"]', "Professional Development")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@coreTheory')
+        .verify.containsText('div[class="selection"]', "Core Theory")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@everdayLife')
+        .verify.containsText('div[class="selection"]', "Everyday Life")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@researchAndInsights')
+        .verify.containsText('div[class="selection"]', "Research and Insights")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@deepDives')
+        .verify.containsText('div[class="selection"]', "Deep Dives")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@personalitiesInLifeAndFiction')
+        .verify.containsText('div[class="selection"]', "Personalities in Life and Fiction")
+        .click('@articlesAndInsights')
+        .waitForElementPresent('div[class="title"]')
+        .click('@aLittleFun')
+        .verify.containsText('div[class="selection"]', "A Little Fun")
+        .click('@articlesAndInsights')
+        .pause(1000)
+        return this
+    },
 }
 module.exports = {
     url: 'https://www.16personalities.com/',
@@ -316,46 +372,6 @@ module.exports = {
             selector: '//div[6][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
-        articlesAndInsights: {
-            selector: '//a[text()="Articles & Insights"]',
-            locateStrategy: 'xpath'
-        },
-        personalGrowth: {
-            selector: '(//a[@class="category"])[1]',
-            locateStrategy: 'xpath'
-        },
-        professionalDevelopment: {
-            selector: '(//a[@class="category"])[2]',
-            locateStrategy: 'xpath'
-        },
-        personalGrowth: {
-            selector: '(//a[@class="category"])[2]',
-            locateStrategy: 'xpath'
-        },
-        coreTheory: {
-            selector: '(//a[@class="category"])[3]',
-            locateStrategy: 'xpath'
-        },
-        everydayLife: {
-            selector: '(//a[@class="category"])[4]',
-            locateStrategy: 'xpath'
-        },
-        researchAndInsights: {
-            selector: '(//a[@class="category"])[5]',
-            locateStrategy: 'xpath'
-        },
-        deepDives: {
-            selector: '(//a[@class="category"])[6]',
-            locateStrategy: 'xpath'
-        },
-        personalitiesInLifeAndFiction: {
-            selector: '(//a[@class="category"])[7]',
-            locateStrategy: 'xpath'
-        },
-        aLittleFun: {
-            selector: '(//a[@class="category"])[8]',
-            locateStrategy: 'xpath'
-        },
         viewAllArticles: {
             selector: '(//a[@class="with-border"])[3]',
             locateStrategy: 'xpath'
@@ -403,6 +419,43 @@ module.exports = {
         },
         noThanks: {
             selector: '//*[@id="main-app"]/main/modal/div[2]/div[3]/button[2]',
+            locateStrategy: 'xpath'
+        },
+        //Articles and Insights
+        articlesAndInsights: {
+            selector: '//*[@id="main-app"]/div/nav/ul/li[2]/a',
+            locateStrategy: 'xpath'
+        },
+        personalGrowth: {
+            selector: '//*[@id="main-app"]/main/section/a[1]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        professionalDevelopment: {
+            selector: '//*[@id="main-app"]/main/section/a[2]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        coreTheory: {
+            selector: '//*[@id="main-app"]/main/section/a[3]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        everdayLife: {
+            selector: '//*[@id="main-app"]/main/section/a[4]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        researchAndInsights: {
+            selector: '//*[@id="main-app"]/main/section/a[5]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        deepDives: {
+            selector: '//*[@id="main-app"]/main/section/a[6]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        personalitiesInLifeAndFiction: {
+            selector: '//*[@id="main-app"]/main/section/a[7]/div[2]/div[1]',
+            locateStrategy: 'xpath'
+        },
+        aLittleFun: {
+            selector: '//*[@id="main-app"]/main/section/a[8]/div[2]/div[1]',
             locateStrategy: 'xpath'
         },
         nextButton: 'button[type="button"]',

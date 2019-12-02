@@ -474,5 +474,4 @@ module.exports = {
         .waitForElementPresent('@resultPageTitle')
         .verify.containsText('@resultPageTitle', "Conclusion")
     },
-
 }

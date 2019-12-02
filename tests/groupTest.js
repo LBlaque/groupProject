@@ -368,4 +368,31 @@ module.exports = {
             .click('@noThanks')
             .pause(3000)
     },
+    'Articles and Insights': browser => {
+        personalities
+        .artAndIns()
+    },
+    'Articles and Insights Search': browser => {
+        personalities
+            .click('@articlesAndInsights')
+            .waitForElementPresent('button[class="btn show-search"]')
+            .click('button[class="btn show-search"]')
+            .waitForElementPresent('input[name="term"]')
+            .setValue('input[name="term"]', "Music")
+            .click('button[type="submit"]')
+            .waitForElementPresent('div[class="filter"]')
+            .verify.containsText('span[class="term"]', "Music")
+            .pause(3000)
+            .click('a[class="fal fa-times no-formatting"]')
+            .pause(1000)
+            .click('button[class="btn show-search"]')
+            .waitForElementPresent('input[name="term"]')
+            .setValue('input[name="term"]', "Reading")
+            .click('button[type="submit"]')
+            .waitForElementPresent('div[class="filter"]')
+            .verify.containsText('span[class="term"]', "Reading")
+            .pause(3000)
+            .click('a[class="fal fa-times no-formatting"]')
+            .pause(1000)
+    },
 }
