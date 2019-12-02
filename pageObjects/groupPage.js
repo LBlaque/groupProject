@@ -1,21 +1,164 @@
 var personalityCommands = {
-    allAgreeMax: function() {
-        // this.api.useXpath()
+    allAgreeMax: function () {
         this
-        .click('@agreeMax1')
-        .pause(300)
-        .click('@agreeMax2')
-        .pause(300)
-        .click('@agreeMax3')
-        .pause(300)
-        .click('@agreeMax4')
-        .pause(300)
-        .click('@agreeMax5')
-        .pause(300)
-        .click('@agreeMax6')
-        .pause(300)
-        .click('@nextButton')
-        .pause(300)
+            .click('@agreeMax1')
+            .pause(300)
+            .click('@agreeMax2')
+            .pause(300)
+            .click('@agreeMax3')
+            .pause(300)
+            .click('@agreeMax4')
+            .pause(300)
+            .click('@agreeMax5')
+            .pause(300)
+            .click('@agreeMax6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    next: function () {
+        this
+            .click('@nextArrow')
+            .pause(300)
+            .click('@nextArrow')
+            .pause(300)
+            .click('@nextArrow')
+            .pause(300)
+            .click('@nextArrow')
+            .pause(300)
+            .click('@nextArrow')
+            .pause(300)
+            .click('@nextArrow')
+            .pause(300)
+            .click('@nextArrow')
+            .pause(300)
+        return this
+    },
+    allDisagreeMax: function () {
+        this
+            .click('@disagreeMax1')
+            .pause(300)
+            .click('@disagreeMax2')
+            .pause(300)
+            .click('@disagreeMax3')
+            .pause(300)
+            .click('@disagreeMax4')
+            .pause(300)
+            .click('@disagreeMax5')
+            .pause(300)
+            .click('@disagreeMax6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    allNeutral: function () {
+        this
+            .click('@neutral1')
+            .pause(300)
+            .click('@neutral2')
+            .pause(300)
+            .click('@neutral3')
+            .pause(300)
+            .click('@neutral4')
+            .pause(300)
+            .click('@neutral5')
+            .pause(300)
+            .click('@neutral6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    allAgreeMed: function () {
+        this
+            .click('@agreeMed1')
+            .pause(300)
+            .click('@agreeMed2')
+            .pause(300)
+            .click('@agreeMed3')
+            .pause(300)
+            .click('@agreeMed4')
+            .pause(300)
+            .click('@agreeMed5')
+            .pause(300)
+            .click('@agreeMed6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    allDisagreeMed: function () {
+        this
+            .click('@disagreeMed1')
+            .pause(300)
+            .click('@disagreeMed2')
+            .pause(300)
+            .click('@disagreeMed3')
+            .pause(300)
+            .click('@disagreeMed4')
+            .pause(300)
+            .click('@disagreeMed5')
+            .pause(300)
+            .click('@disagreeMed6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    agree3disagree3: function () {
+        this
+            .click('@agreeMax1')
+            .pause(300)
+            .click('@agreeMax2')
+            .pause(300)
+            .click('@agreeMax3')
+            .pause(300)
+            .click('@disagreeMax4')
+            .pause(300)
+            .click('@disagreeMax5')
+            .pause(300)
+            .click('@disagreeMax6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    disagree3agree3: function () {
+        this
+            .click('@disagreeMax1')
+            .pause(300)
+            .click('@disagreeMax2')
+            .pause(300)
+            .click('@disagreeMax3')
+            .pause(300)
+            .click('@agreeMax4')
+            .pause(300)
+            .click('@agreeMax5')
+            .pause(300)
+            .click('@agreeMax6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
+        return this
+    },
+    agree123disagree123: function () {
+        this
+            .click('@agreeMax1')
+            .pause(300)
+            .click('@agreeMed2')
+            .pause(300)
+            .click('@agreeMin3')
+            .pause(300)
+            .click('@disagreeMin4')
+            .pause(300)
+            .click('@disagreeMed5')
+            .pause(300)
+            .click('@disagreeMax6')
+            .pause(300)
+            .click('@nextButton')
+            .pause(300)
         return this
     },
 }
@@ -202,27 +345,27 @@ module.exports = {
         professionalDevelopment: {
             selector: '(//a[@class="category"])[2]',
             locateStrategy: 'xpath'
-        }, 
+        },
         personalGrowth: {
             selector: '(//a[@class="category"])[2]',
             locateStrategy: 'xpath'
-        }, 
+        },
         coreTheory: {
             selector: '(//a[@class="category"])[3]',
             locateStrategy: 'xpath'
-        }, 
+        },
         everydayLife: {
             selector: '(//a[@class="category"])[4]',
             locateStrategy: 'xpath'
-        }, 
+        },
         researchAndInsights: {
             selector: '(//a[@class="category"])[5]',
             locateStrategy: 'xpath'
-        }, 
+        },
         deepDives: {
             selector: '(//a[@class="category"])[6]',
             locateStrategy: 'xpath'
-        }, 
+        },
         personalitiesInLifeAndFiction: {
             selector: '(//a[@class="category"])[7]',
             locateStrategy: 'xpath'

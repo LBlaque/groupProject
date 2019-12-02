@@ -8,7 +8,7 @@ module.exports = {
     after: browser => {
         browser.end()
     },
-    'Taking a Test': browser => {
+    'Agree Max Test': browser => {
         personalities
             .click('@takeTheTest')
             .allAgreeMax()
@@ -46,6 +46,344 @@ module.exports = {
         personalities.expect.element('@noThanks').to.be.visible
         personalities
             .click('@noThanks')
+            // .pause(300)
+            // .next()
             .pause(3000)
-    }
+    },
+    'Disagree Max Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .allDisagreeMax()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .allDisagreeMax()
+        personalities.expect.element('.type-name').text.to.equal('Adventurer')
+        personalities.expect.element('.type-code').text.to.equal('ISFP-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'Neutral Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .allNeutral()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('.type-name').text.to.equal('Adventurer')
+        personalities.expect.element('.type-code').text.to.equal('ISFP-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'Agree Medium Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .allNeutral()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .allNeutral()
+        personalities.expect.element('.type-name').text.to.equal('Adventurer')
+        personalities.expect.element('.type-code').text.to.equal('ISFP-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'Agree Medium Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .allAgreeMed()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .allAgreeMed()
+        personalities.expect.element('.type-name').text.to.equal('Advocate')
+        personalities.expect.element('.type-code').text.to.equal('INFJ-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'Disagree Med Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .allDisagreeMed()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .allDisagreeMed()
+        personalities.expect.element('.type-name').text.to.equal('Adventurer')
+        personalities.expect.element('.type-code').text.to.equal('ISFP-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'agreeMax(3), disagreeMax(3) Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .agree3disagree3()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .agree3disagree3()
+        personalities.expect.element('.type-name').text.to.equal('Logician')
+        personalities.expect.element('.type-code').text.to.equal('INTP-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'disagreeMax(3), agreeMax(3) Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .disagree3agree3()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .disagree3agree3()
+        personalities.expect.element('.type-name').text.to.equal('Consul')
+        personalities.expect.element('.type-code').text.to.equal('ESFJ-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
+    'Agree Max to Disagree Max Test': browser => {
+        personalities
+            .click('@takeTheTest')
+            .agree123disagree123()
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
+            .agree123disagree123()
+        personalities.expect.element('.type-name').text.to.equal('Architect')
+        personalities.expect.element('.type-code').text.to.equal('INTJ-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
+            // .pause(300)
+            // .next()
+            .pause(3000)
+    },
 }
