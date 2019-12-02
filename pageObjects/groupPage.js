@@ -1,55 +1,37 @@
-var results = [
-    '@architect',
-    '@logician',
-    '@commander',
-    '@debater',
-    '@advocate',
-    '@mediator',
-    '@protagonist',
-    '@campaigner',
-    '@logistician',
-    '@defender',
-    '@executive',
-    '@consul',
-    '@virtuoso',
-    '@adventurer',
-    '@entrepreneur',
-    '@entertainer',
-]
 var personalityCommands = {
-    personalityLookup: function (results) {
-        browser => {
-                personalities
+    personalityLookup: function (browser, data) {
+            this
+            browser
                 .waitForElementPresent('@personalityTypes')
                 .click('@personalityTypes')
-                .waitForElementPresent(`${results}`)
-                .click(`${results}`)
-                .pause(100)
+                .waitForElementPresent(`svg[class="${data.result}"]`)
+                .click(`svg[class="${data.result}"`)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@nextArrow')
                 .click('@nextArrow')
-                .pause(100)
+                .pause(150)
                 .waitForElementPresent('@resultPageTitle')
                 .verify.containsText('@resultPageTitle', "Conclusion")
-            }
-        },
+            return this
+    },
     allAgreeMax: function () {
         this
             .click('@agreeMax1')
@@ -467,11 +449,11 @@ module.exports = {
         personalityTypes: //'a.xh-highlight',
         {
             //    selector: '//html/body/div[@id="main-app"]/div[@class="navbar"]/nav[@class="middle-section"]/ul/li[1]/a',
-        //     selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
-        //     locateStrategy: 'xpath'
-        // personalityTypes: {
+            //     selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
+            //     locateStrategy: 'xpath'
+            // personalityTypes: {
             selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
-           locateStrategy: 'xpath'
+            locateStrategy: 'xpath'
         },
         architect: 'svg[class="architect"]',
         logician: 'svg[class="logician"]',
