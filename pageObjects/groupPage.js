@@ -1,4 +1,37 @@
 var personalityCommands = {
+    personalityLookup: function (browser, data) {
+            this
+            browser
+                .waitForElementPresent('@personalityTypes')
+                .click('@personalityTypes')
+                .waitForElementPresent(`svg[class="${data.result}"]`)
+                .click(`svg[class="${data.result}"`)
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(150)
+                .waitForElementPresent('@resultPageTitle')
+                .verify.containsText('@resultPageTitle', "Conclusion")
+            return this
+    },
     allAgreeMax: function () {
         this
             .click('@agreeMax1')
@@ -141,24 +174,6 @@ var personalityCommands = {
             .pause(300)
             .click('@nextButton')
             .pause(300)
-        return this
-    },
-    agree321disagree321: function () {
-        this
-        .click('@disagreeMax1')
-        .pause(300)
-        .click('@disagreeMed2')
-        .pause(300)
-        .click('@disagreeMin3')
-        .pause(300)
-        .click('@agreeMin4')
-        .pause(300)
-        .click('@agreeMed5')
-        .pause(300)
-        .click('@agreeMax6')
-        .pause(300)
-        .click('@nextButton')
-        .pause(300)
         return this
     },
     artAndIns: function () {
@@ -468,7 +483,7 @@ module.exports = {
         //below are personality types
         personalityTypes: {
             selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
-           locateStrategy: 'xpath'
+            locateStrategy: 'xpath'
         },
         architect: 'svg[class="architect"]',
         logician: 'svg[class="logician"]',
