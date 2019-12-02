@@ -1,101 +1,21 @@
 var personalityCommands = {
     allAgreeMax: function() {
         // this.api.useXpath()
-        // advocate.execute(function() {return window.sessionStorage.clear();})
         this
-        .click('@takeTheTest')
-        .click('@agreeMax')
+        .click('@agreeMax1')
+        .pause(300)
         .click('@agreeMax2')
+        .pause(300)
         .click('@agreeMax3')
+        .pause(300)
         .click('@agreeMax4')
+        .pause(300)
         .click('@agreeMax5')
+        .pause(300)
         .click('@agreeMax6')
+        .pause(300)
         .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You often")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You have a careful")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "When in a group")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You usually")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You usually prefer")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "When in a public place,")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You often drift away into")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You have got detailed education")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "You have got detailed education")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[contains(text(), "Your emotions control")]')
-        // advocate.click('@agreeMax')
-        // .click('@agreeMax2')
-        // .click('@agreeMax3')
-        // .click('@agreeMax4')
-        // .click('@agreeMax5')
-        // .click('@agreeMax6')
-        // .click('@nextButton')
-        // .expect.elementVisible('//div[text()="Advocate"]')
-        // advocate.expect.elementVisible('//div[text()="INFJ-t"]')
-        // .click('@startReading')
-        // .waitForElementVisible('//button[@class="btn btn-white"]')
-        // .click('//button[@class="btn btn-white"]')
+        .pause(300)
         return this
     },
 }
@@ -103,172 +23,172 @@ module.exports = {
     url: 'https://www.16personalities.com/',
     commands: [personalityCommands],
     elements: {
-        agreeMax: {
-            selector: ('//div[@class="option agree max"][0]'),
+        agreeMax1: {
+            selector: '//div[1][@class="question"]//div[@class="option agree max"]',
             locateStrategy: 'xpath'
         },
         agreeMax2: {
-            selector: ('//div[@class="option agree max"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option agree max"]',
             locateStrategy: 'xpath'
         },
         agreeMax3: {
-            selector: ('//div[@class="option agree max"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option agree max"]',
             locateStrategy: 'xpath'
         },
         agreeMax4: {
-            selector: ('//div[@class="option agree max"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option agree max"]',
             locateStrategy: 'xpath'
         },
         agreeMax5: {
-            selector: ('//div[@class="option agree max"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option agree max"]',
             locateStrategy: 'xpath'
         },
         agreeMax6: {
-            selector: ('//div[@class="option agree max"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option agree max"]',
             locateStrategy: 'xpath'
         },
         agreeMed1: {
-            selector: ('//div[@class="option agree med"]')[0],
+            selector: '//div[1][@class="question"]//div[@class="option agree med"]',
             locateStrategy: 'xpath'
         },
         agreeMed2: {
-            selector: ('//div[@class="option agree med"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option agree med"]',
             locateStrategy: 'xpath'
         },
         agreeMed3: {
-            selector: ('//div[@class="option agree med"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option agree med"]',
             locateStrategy: 'xpath'
         },
         agreeMed4: {
-            selector: ('//div[@class="option agree med"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option agree med"]',
             locateStrategy: 'xpath'
         },
         agreeMed5: {
-            selector: ('//div[@class="option agree med"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option agree med"]',
             locateStrategy: 'xpath'
         },
         agreeMed6: {
-            selector: ('//div[@class="option agree med"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option agree med"]',
             locateStrategy: 'xpath'
         },
         agreeMin1: {
-            selector: ('//div[@class="option agree min"]')[0],
+            selector: '//div[1][@class="question"]//div[@class="option agree min"]',
             locateStrategy: 'xpath'
         },
         agreeMin2: {
-            selector: ('//div[@class="option agree min"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option agree min"]',
             locateStrategy: 'xpath'
         },
         agreeMin3: {
-            selector: ('//div[@class="option agree min"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option agree min"]',
             locateStrategy: 'xpath'
         },
         agreeMin4: {
-            selector: ('//div[@class="option agree min"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option agree min"]',
             locateStrategy: 'xpath'
         },
         agreeMin5: {
-            selector: ('//div[@class="option agree min"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option agree min"]',
             locateStrategy: 'xpath'
         },
         agreeMin6: {
-            selector: ('//div[@class="option agree min"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option agree min"]',
             locateStrategy: 'xpath'
         },
         neutral1: {
-            selector: ('//div[@class="option neutral"]')[0],
+            selector: '//div[1][@class="question"]//div[@class="option neutral"]',
             locateStrategy: 'xpath'
         },
         neutral2: {
-            selector: ('//div[@class="option neutral"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option neutral"]',
             locateStrategy: 'xpath'
         },
         neutral3: {
-            selector: ('//div[@class="option neutral"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option neutral"]',
             locateStrategy: 'xpath'
         },
         neutral4: {
-            selector: ('//div[@class="option neutral"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option neutral"]',
             locateStrategy: 'xpath'
         },
         neutral5: {
-            selector: ('//div[@class="option neutral"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option neutral"]',
             locateStrategy: 'xpath'
         },
         neutral6: {
-            selector: ('//div[@class="option neutral"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option neutral"]',
             locateStrategy: 'xpath'
         },
         disagreeMin1: {
-            selector: ('//div[@class="option disagree min"]')[0],
+            selector: '//div[1][@class="question"]//div[@class="option disagree min"]',
             locateStrategy: 'xpath'
         },
         disagreeMin2: {
-            selector: ('//div[@class="option disagree min"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option disagree min"]',
             locateStrategy: 'xpath'
         },
         disagreeMin3: {
-            selector: ('//div[@class="option disagree min"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option disagree min"]',
             locateStrategy: 'xpath'
         },
         disagreeMin4: {
-            selector: ('//div[@class="option disagree min"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option disagree min"]',
             locateStrategy: 'xpath'
         },
         disagreeMin5: {
-            selector: ('//div[@class="option disagree min"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option disagree min"]',
             locateStrategy: 'xpath'
         },
         disagreeMin6: {
-            selector: ('//div[@class="option disagree min"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option disagree min"]',
             locateStrategy: 'xpath'
         },
         disagreeMed1: {
-            selector: ('//div[@class="option disagree med"]')[0],
+            selector: '//div[1][@class="question"]//div[@class="option disagree med"]',
             locateStrategy: 'xpath'
         },
         disagreeMed2: {
-            selector: ('//div[@class="option disagree med"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option disagree med"]',
             locateStrategy: 'xpath'
         },
         disagreeMed3: {
-            selector: ('//div[@class="option disagree med"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option disagree med"]',
             locateStrategy: 'xpath'
         },
         disagreeMed4: {
-            selector: ('//div[@class="option disagree med"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option disagree med"]',
             locateStrategy: 'xpath'
         },
         disagreeMed5: {
-            selector: ('//div[@class="option disagree med"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option disagree med"]',
             locateStrategy: 'xpath'
         },
         disagreeMed6: {
-            selector: ('//div[@class="option disagree med"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option disagree med"]',
             locateStrategy: 'xpath'
         },
         disagreeMax1: {
-            selector: ('//div[@class="option disagree max"]')[0],
+            selector: '//div[1][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
         disagreeMax2: {
-            selector: ('//div[@class="option disagree max"]')[1],
+            selector: '//div[2][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
         disagreeMax3: {
-            selector: ('//div[@class="option disagree max"]')[2],
+            selector: '//div[3][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
         disagreeMax4: {
-            selector: ('//div[@class="option disagree max"]')[3],
+            selector: '//div[4][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
         disagreeMax5: {
-            selector: ('//div[@class="option disagree max"]')[4],
+            selector: '//div[5][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
         disagreeMax6: {
-            selector: ('//div[@class="option disagree max"]')[5],
+            selector: '//div[6][@class="question"]//div[@class="option disagree max"]',
             locateStrategy: 'xpath'
         },
         articlesAndInsights: {
@@ -316,7 +236,48 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         takeTheTest: {
-            selector: '//button[@class="btn btn-action"]',
+            // selector: '/html/body/div[1]/main/div[1]/div[2]/a',
+            selector: '//main//div[@class="hero"]//a[contains(@class, "btn") and contains(@class, "btn-action")]',
+            locateStrategy: 'xpath'
+        },
+        firstLine: {
+            selector: '//div[contains(text(), "You often")]',
+            locateStrategy: 'xpath'
+        },
+        secondLine: {
+            selector: '//div[contains(text(), "You have a careful")]',
+            locateStrategy: 'xpath'
+        },
+        thirdLine: {
+            selector: '//div[contains(text(), "When in a group")]',
+            locateStrategy: 'xpath'
+        },
+        fourthLine: {
+            selector: '//div[contains(text(), "You usually")]',
+            locateStrategy: 'xpath'
+        },
+        fifthLine: {
+            selector: '//div[@class="statement"][contains(text(), "You usually prefer")]',
+            locateStrategy: 'xpath'
+        },
+        sixthLine: {
+            selector: '//div[contains(text(), "When in a public place,")]',
+            locateStrategy: 'xpath'
+        },
+        seventhLine: {
+            selector: '//div[contains(text(), "You often drift away into")]',
+            locateStrategy: 'xpath'
+        },
+        eighthLine: {
+            selector: '//div[contains(text(), "You have got detailed education")]',
+            locateStrategy: 'xpath'
+        },
+        ninthLine: {
+            selector: '//div[contains(text(), "Your emotions control")]',
+            locateStrategy: 'xpath'
+        },
+        noThanks: {
+            selector: '//*[@id="main-app"]/main/modal/div[2]/div[3]/button[2]',
             locateStrategy: 'xpath'
         },
         nextButton: 'button[type="button"]',

@@ -12,35 +12,40 @@ module.exports = {
         personalities
             .click('@takeTheTest')
             .allAgreeMax()
-            // .expect.elementVisible('//div[contains(text(), "You often")]')
-            // personalities
+        personalities.expect.element('@firstLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "You have a careful")]')
-            // personalities
+        personalities.expect.element('@secondLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "When in a group")]')
-            // personalities
+        personalities.expect.element('@thirdLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "You usually")]')
-            // personalities
+        personalities.expect.element('@fourthLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "You usually prefer")]')
-            // personalities
+        personalities.expect.element('@fifthLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "When in a public place,")]')
-            // personalities
+        personalities.expect.element('@sixthLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "You often drift away into")]')
-            // personalities
+        personalities.expect.element('@seventhLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "You have got detailed education")]')
-            // personalities
+        personalities.expect.element('@eighthLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[contains(text(), "Your emotions control")]')
-            // personalities
+        personalities.expect.element('@ninthLine').to.be.visible
+        personalities
             .allAgreeMax()
-            //     .expect.elementVisible('//div[text()="Advocate"]')
-            //     advocate.expect.elementVisible('//div[text()="INFJ-t"]')
+        personalities.expect.element('.type-name').text.to.equal('Advocate')
+        personalities.expect.element('.type-code').text.to.equal('INFJ-T')
+        personalities
+            .click('@startReading')
+        personalities.expect.element('@noThanks').to.be.visible
+        personalities
+            .click('@noThanks')
             .pause(3000)
     }
 }
