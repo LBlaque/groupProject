@@ -1,4 +1,55 @@
+var results = [
+    '@architect',
+    '@logician',
+    '@commander',
+    '@debater',
+    '@advocate',
+    '@mediator',
+    '@protagonist',
+    '@campaigner',
+    '@logistician',
+    '@defender',
+    '@executive',
+    '@consul',
+    '@virtuoso',
+    '@adventurer',
+    '@entrepreneur',
+    '@entertainer',
+]
 var personalityCommands = {
+    personalityLookup: function (results) {
+        browser => {
+                personalities
+                .waitForElementPresent('@personalityTypes')
+                .click('@personalityTypes')
+                .waitForElementPresent(`${results}`)
+                .click(`${results}`)
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@nextArrow')
+                .click('@nextArrow')
+                .pause(100)
+                .waitForElementPresent('@resultPageTitle')
+                .verify.containsText('@resultPageTitle', "Conclusion")
+            }
+        },
     allAgreeMax: function () {
         this
             .click('@agreeMax1')
@@ -432,11 +483,11 @@ module.exports = {
         resultPageTitle: 'article.main.description',
         //below are personality types
         personalityTypes: //'a.xh-highlight',
-         {
-        //    selector: '//html/body/div[@id="main-app"]/div[@class="navbar"]/nav[@class="middle-section"]/ul/li[1]/a',
+        {
+            //    selector: '//html/body/div[@id="main-app"]/div[@class="navbar"]/nav[@class="middle-section"]/ul/li[1]/a',
             selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
-           locateStrategy: 'xpath'
-         },
+            locateStrategy: 'xpath'
+        },
         architect: 'svg[class="architect"]',
         logician: 'svg[class="logician"]',
         commander: 'svg[class="commander"]',
