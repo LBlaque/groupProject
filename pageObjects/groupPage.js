@@ -429,6 +429,13 @@ module.exports = {
         personalitiesButton: 'img[alt="16Personalities"]',
         youMayKnow: 'span[class="fal fa-angle-right"]',
         nextArrow: 'div[class="fal fa-long-arrow-right"]',
+        resultPageTitle: 'article.main.description',
+        //below are personality types
+        // personalityTypes: 'a.xh-highlight',
+        //  {
+        //    selector: '//nav[@class="middle-section"]/ul/li[1]/a',
+        //    locateStrategy: 'xpath'
+        //  },
         architect: 'svg[class="architect"]',
         logician: 'svg[class="logician"]',
         commander: 'svg[class="commander"]',
@@ -437,13 +444,13 @@ module.exports = {
         mediator: 'svg[class="mediator"]',
         protagonist: 'svg[class="protagonist"]',
         campaigner: 'svg[class="campaigner"]',
-        logician: 'svg[class="logician"]',
+        logistician: 'svg[class="logistician"]',
         defender: 'svg[class="defender"]',
         executive: 'svg[class="executive"]',
         consul: 'svg[class="consul"]',
         virtuoso: 'svg[class="virtuoso"]',
         adventurer: 'svg[class="adventurer"]',
-        entrepeneur: 'svg[class="entrepeneur"]',
+        entrepreneur: 'svg[class="entrepreneur"]',
         entertainer: 'svg[class="entertainer"]',
     }
 }
