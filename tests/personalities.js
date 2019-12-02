@@ -4,13 +4,14 @@ module.exports = {
         personalities = browser.page.groupPage()
         personalities
             .navigate()
-            browser.url('https://www.16personalities.com/personality-types')
     },
     after: browser => {
         browser.end()
     },
     'Architect': browser => {
         personalities
+        .waitForElementPresent('@personalityTypes')
+        .click('@personalityTypes')
         .waitForElementPresent('@architect')
         .click('@architect')
         .pause(100)

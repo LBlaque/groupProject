@@ -431,11 +431,12 @@ module.exports = {
         nextArrow: 'div[class="fal fa-long-arrow-right"]',
         resultPageTitle: 'article.main.description',
         //below are personality types
-        // personalityTypes: 'a.xh-highlight',
-        //  {
-        //    selector: '//nav[@class="middle-section"]/ul/li[1]/a',
-        //    locateStrategy: 'xpath'
-        //  },
+        personalityTypes: //'a.xh-highlight',
+         {
+        //    selector: '//html/body/div[@id="main-app"]/div[@class="navbar"]/nav[@class="middle-section"]/ul/li[1]/a',
+            selector: '//*[@id="main-app"]/div/nav/ul/li[1]/a',
+           locateStrategy: 'xpath'
+         },
         architect: 'svg[class="architect"]',
         logician: 'svg[class="logician"]',
         commander: 'svg[class="commander"]',
